@@ -7,6 +7,12 @@ package com.icu.ctyk.array;
  */
 public class MinEatingSpeed {
 
+    public static void main(String[] args) {
+        System.out.println(
+                new MinEatingSpeed().minEatingSpeed(new int[]{30, 11, 23, 4, 20}, 5)
+        );
+    }
+
     public int minEatingSpeed(int[] piles, int h) {
         int right = 0;
         // 一次性只能吃最多一堆
