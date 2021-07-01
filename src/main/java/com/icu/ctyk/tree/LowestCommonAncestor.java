@@ -37,4 +37,20 @@ public class LowestCommonAncestor {
         }
         return leftRes || rightRes || (root.val == left.val || root.val == right.val);
     }
+
+    public TreeNode lowestCommonAncestorV2(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || root == p || root == q) {
+            return root;
+        }
+        TreeNode left = lowestCommonAncestorV2(root.left, p, q);
+        TreeNode right = lowestCommonAncestorV2(root.right, p, q);
+        if (left == null) {
+            return right;
+        }
+        if (right == null) {
+            return left;
+        }
+        return root;
+
+    }
 }
