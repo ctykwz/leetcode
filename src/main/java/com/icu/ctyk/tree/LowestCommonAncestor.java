@@ -51,6 +51,5 @@ public class LowestCommonAncestor {
             return left;
         }
         return root;
-
     }
 }
