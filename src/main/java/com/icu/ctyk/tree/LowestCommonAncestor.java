@@ -53,9 +53,22 @@ public class LowestCommonAncestor {
         return root;
     }
 
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(5);
+        root.left.left = new TreeNode(6);
+        root.left.right = new TreeNode(2);
+        root.right = new TreeNode(1);
+        root.right.left = new TreeNode(0);
+        root.right.right = new TreeNode(8);
+        TreeNode res = new LowestCommonAncestor().lowestCommonAncestorV3(root, new TreeNode(5), new TreeNode(10));
+        System.out.println(res);
+    }
+
     private TreeNode res;
 
-    // q/p 之一可能为null
+    // q/p 之一可能为null 题里的节点值不会出现重复
     public TreeNode lowestCommonAncestorV3(TreeNode root, TreeNode p, TreeNode q) {
         res = null;
         dfsV3(root, p, q);
