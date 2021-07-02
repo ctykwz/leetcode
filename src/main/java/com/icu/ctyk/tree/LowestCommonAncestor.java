@@ -52,4 +52,30 @@ public class LowestCommonAncestor {
         }
         return root;
     }
+
+    private TreeNode res;
+
+    // q/p 之一可能为null
+    public TreeNode lowestCommonAncestorV3(TreeNode root, TreeNode p, TreeNode q) {
+        res = null;
+        dfsV3(root, p, q);
+        return res;
+    }
+
+    private boolean dfsV3(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
+            return false;
+        }
+        boolean left = dfsV3(root.left, p, q);
+        boolean right = dfsV3(root.right, p, q);
+        if (left && right) {
+            res = root;
+            return true;
+        }
+        if ((left || right) && (root.val == p.val || root.val == q.val)) {
+            res = root;
+        }
+        return left || right || root.val == p.val || root.val == q.val;
+    }
+
 }
