@@ -8,7 +8,7 @@ package com.icu.ctyk.array;
 public class NumberOfArithmeticSlices {
 
     public static void main(String[] args) {
-        System.out.println(new NumberOfArithmeticSlices().numberOfArithmeticSlices(new int[]{1, 2, 3, 4, 5, 6, 7}));
+        System.out.println(new NumberOfArithmeticSlices().numberOfArithmeticSlices(new int[]{1, 2, 3}));
     }
 
     public int numberOfArithmeticSlices(int[] nums) {
@@ -20,7 +20,7 @@ public class NumberOfArithmeticSlices {
                 // eg. 1,2,3,4,5   i=2时 有1,2,3 i=3的时候有1,2,3,4 和 2,3,4  以5结尾的有1,2,3,4,5 2,3,4,5 3,4,5 也就是i每增
                 // 加一位 dp[i] 就相对上一个+1
                 dp[i] = dp[i - 1] + 1;
-                cnt = dp[i] + 1;
+                cnt += dp[i];
             }
         }
         return cnt;
