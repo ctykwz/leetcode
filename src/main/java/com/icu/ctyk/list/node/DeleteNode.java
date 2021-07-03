@@ -9,9 +9,7 @@ public class DeleteNode {
         if (node == null || node.next == null) {
             return;
         }
-        while (node.next.next != null) {
-            node.val = node.next.val;
-            node = node.next;
-        }
+        node.val = node.next.val;
+        node.next = node.next.next;
     }
 }
