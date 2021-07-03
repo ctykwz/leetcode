@@ -1,14 +1,12 @@
 package com.icu.ctyk.str;
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.function.ToIntFunction;
 
 /**
- * @author xiyun on 2021-07-03 11:08
+ * @author ctykwz on 2021-07-03 11:08
  */
 public class FrequencySort {
 
