@@ -1,8 +1,6 @@
 package com.icu.ctyk.array;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/
