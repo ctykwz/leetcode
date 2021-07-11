@@ -1,7 +1,5 @@
 package com.icu.ctyk.list.node;
 
-import java.util.List;
-
 /**
  * @author ctykwz on 2021-07-03 21:00
  */
