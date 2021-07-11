@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author xiyun on 2021-07-08 09:35
+ * @author ctykwz on 2021-07-08 09:35
  */
 public class NumSubarraysWithSum {
 

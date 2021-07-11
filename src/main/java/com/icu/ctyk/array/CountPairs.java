@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * https://leetcode-cn.com/problems/count-good-meals/
  *
- * @author xiyun on 2021-07-07 09:29
+ * @author ctykwz on 2021-07-07 09:29
  */
 public class CountPairs {
 
